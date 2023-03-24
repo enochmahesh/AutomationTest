@@ -1,0 +1,13 @@
+
+<suite name="Pickme Exam Test">
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+    </listeners>
+
+    <test name="Testing get users endpoint">
+        <classes>
+            <class name="test.pickme.ServicesTest"/>
+            <class name="test.pickme.SeleniumTests"/>"
+        </classes>
+    </test>
+    </suite>
