@@ -7,20 +7,14 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Set;
-
 
 public class ServicesTest extends BaseClass{
 
     String userId;
-
     @BeforeTest
         public void setting(){
         RestAssured.baseURI = "https://reqres.in/";
-
      }
     @Test(priority = 0)
     public void getUsers(){
@@ -65,8 +59,5 @@ public class ServicesTest extends BaseClass{
         String cTime=userData.path("data.createdAt");
         System.out.println("Created user's id is "+userId);
         System.out.println("The user id is "+uId+" and the created time is "+cTime);
-
-
     }
-
 }
